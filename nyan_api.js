@@ -9,7 +9,7 @@ async function main(){
         var router = express()
 
         router.get('/api/status', (req, res) => {
-            res.send({ok: nyan})
+            res.send({ok: true})
         })
 
         var port = parseInt(process.env.PORT || '3000', 10)
